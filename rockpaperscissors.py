@@ -84,8 +84,13 @@ def Game():
                 print("GAME OVER!")
                 break
         else:
-            print("Wrong input")
-            break
+            print("Wrong input!")
+            rematch = input("Would you like a rematch? (Yes/no)").lower()
+            if rematch == "yes":
+                continue
+            else:
+                print("GAME OVER!")
+                break
 
 
 Game()
